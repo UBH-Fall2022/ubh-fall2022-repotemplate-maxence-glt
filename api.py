@@ -24,6 +24,11 @@ def time_format(time: str) -> str:
     else:
         hour = hour - 12
         return str(hour) + time[2:] + " PM"
+def fullLocation(location: str) -> str:
+    geolocator = Nominatim(user_agent="my_request")
+    getLoc = geolocator.geocode(location)
+    if getLoc is None: return False
+    return f'{getLoc.address} ({(round((getLoc.latitude), 3))}, {(round((getLoc.longitude), 3))})'
 
 
 
@@ -44,7 +49,6 @@ def weather_specs(location: str) -> dict:
     if getLoc is None: return False
 
     response = requests.get(f"https://api.open-meteo.com/v1/forecast?latitude={getLoc.latitude}&longitude={getLoc.longitude}&hourly=temperature_2m,relativehumidity_2m,precipitation_probability,evapotranspiration,soil_temperature_6cm,soil_moisture_3_to_9cm&forecast_days=14")
-    print(f"https://api.open-meteo.com/v1/forecast?latitude={getLoc.latitude}&longitude={getLoc.longitude}&hourly=temperature_2m,relativehumidity_2m,precipitation_probability,evapotranspiration,soil_temperature_6cm,soil_moisture_3_to_9cm&forecast_days=14")
     # making sure the API key was input correctly
     if response.status_code != 200:
         print("API Key Invalid")

@@ -134,16 +134,23 @@ img {
     }
 } */
 
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+
 td, th {
-  
+    
     border: 2px solid lightgray;
     text-align: left;
     padding: 8px;
-  
+    background-color: #C3976A;
+    border-color: #464441;
+
   }
 
 #tr1 {
   
-    background-color: #747474;
+    background-color: #D9D7C7;
   
   }
