@@ -35,9 +35,11 @@
     background-color: #8e765f;
     cursor: pointer;
 }
-.home{
+
+.home {
     visibility: visible;
 }
+
 .slide {
     display: flex;
     flex-direction: row;
@@ -68,14 +70,60 @@ img {
     height: auto;
 }
 
-.help{
+.help {
     margin: 100px;
     font-size: 30px;
     text-align: center;
 }
-.helpcontent{
+
+.helpcontent {
     background-color: #f4ceab;
     padding: 30px;
     border: 2px solid #000;
     border-radius: 9px;
 }
+
+.gun {
+    /* width: 200px; */
+    /* Set the width and height of your gun image */
+    /* height: 100px; */
+    /* position: relative; */
+    cursor: pointer;
+    /* Add cursor pointer for the image */
+}
+
+.gun img {
+    width: 70px;
+    height: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gun.recoil img {
+    transform: translateY(-10px) rotate(-40deg);
+}
+.gun2 {
+    /* width: 200px; */
+    /* Set the width and height of your gun image */
+    /* height: 100px; */
+    /* position: relative; */
+    cursor: pointer;
+    /* Add cursor pointer for the image */
+}
+
+.gun2 img {
+    width: 70px;
+    height: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gun2.recoil2 img {
+    transform: translateY(-10px) rotate(35deg);
+}
+/* @keyframes image {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-40deg);
+    }
+} */
