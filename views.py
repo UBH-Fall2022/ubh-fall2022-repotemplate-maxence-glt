@@ -1,12 +1,35 @@
 from flask import Blueprint, render_template, request
+from api import weather_specs
 
 views = Blueprint(__name__, "views")
 
-@views.route("/")
-def home():
-    return render_template('index.html')
+defaultWeather = weather_specs("Buffalo")
+locationIndex = "Buffalo"
 
-@views.route("/ayush")
+views = Blueprint(__name__, "views")
+
+@views.route("/ayush", methods = ["POST", "GET"])
+def home():
+    global defaultWeather, locationIndex
+    if request.method == "GET":
+        return render_template('index.html', loc=locationIndex, test=defaultWeather)
+    
+    if request.method == "POST":
+        location = request.form.get("location")
+        defaultWeather = weather_specs(location)
+
+        print(defaultWeather, "THIS IS THE LOCATION")
+
+        if defaultWeather == False:
+            return render_template("error.html", request=location)
+
+        locationIndex=location
+
+        
+
+        return render_template("index.html", loc=locationIndex, test=defaultWeather)
+
+@views.route("/")
 def ayush():
     return render_template('ayush.html')
 
