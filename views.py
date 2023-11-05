@@ -8,16 +8,21 @@ views = Blueprint(__name__, "views")
 
 @views.route("/", methods = ["POST", "GET"])
 def home():
-    global defaultWeather
+    global defaultWeather, locationIndex
     if request.method == "GET":
         return render_template('index.html', loc=locationIndex, test=defaultWeather)
     
     if request.method == "POST":
         location = request.form.get("location")
         defaultWeather = weather_specs(location)
+
+        print(defaultWeather, "THIS IS THE LOCATION")
+
+        if defaultWeather == False:
+            return render_template("error.html", request=location)
+
         locationIndex=location
 
-        if location == None:
-            return render_template("error.html", request=location)
+        
 
         return render_template("index.html", loc=locationIndex, test=defaultWeather)

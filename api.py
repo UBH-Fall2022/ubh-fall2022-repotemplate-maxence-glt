@@ -62,4 +62,3 @@ def weather_specs(location: str) -> dict:
 
     return response.json()
 
-weather_specs("Buffalo")
