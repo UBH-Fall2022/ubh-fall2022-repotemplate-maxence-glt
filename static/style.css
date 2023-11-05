@@ -1,12 +1,15 @@
-*{
+* {
     background-color: #C3976A;
 }
-.logo{
+
+.logo {
+
     height: 100px;
     display: flex;
     justify-content: center;
     margin: 20px;
 }
+
 .header{
     display: flex;
     flex-direction: row;
@@ -15,6 +18,117 @@
     background-color: #DFCDBB;
     padding: 5px;
 }
+
+.contents {
+    width: fit-content;
+    background-color: #DFCDBB;
+}
+
+.content-item {
+    background-color: #DFCDBB;
+    display: inline-block;
+    margin: 0 70px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.content-item:hover {
+    background-color: #8e765f;
+    cursor: pointer;
+}
+
+.home {
+    visibility: visible;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ribbon {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+}
+
+.max-p,
+.ayush-p,
+.tejas-p,
+.ismael-p {
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.help {
+    margin: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.helpcontent {
+    background-color: #f4ceab;
+    padding: 30px;
+    border: 2px solid #000;
+    border-radius: 9px;
+}
+
+.gun {
+    /* width: 200px; */
+    /* Set the width and height of your gun image */
+    /* height: 100px; */
+    /* position: relative; */
+    cursor: pointer;
+    /* Add cursor pointer for the image */
+}
+
+.gun img {
+    width: 70px;
+    height: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gun.recoil img {
+    transform: translateY(-10px) rotate(-40deg);
+}
+.gun2 {
+    /* width: 200px; */
+    /* Set the width and height of your gun image */
+    /* height: 100px; */
+    /* position: relative; */
+    cursor: pointer;
+    /* Add cursor pointer for the image */
+}
+
+.gun2 img {
+    width: 70px;
+    height: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gun2.recoil2 img {
+    transform: translateY(-10px) rotate(35deg);
+}
+/* @keyframes image {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-40deg);
+    }
+} */
+
 .contents{
     width: fit-content;
     background-color: #DFCDBB;

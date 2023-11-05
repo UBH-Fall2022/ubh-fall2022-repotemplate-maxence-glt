@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grow Smart</title>
+    <link rel="stylesheet" href="../static/style.css" type="text/css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="logo"><img src="/static/images/Journal.png" alt="Website Logo">
+        </div>
+        <div class="header">
+            <div class="contents">
+                <div class="homebtn  content-item" style="background-color: #8e765f;">Home</div>
+                <div class="aboutbtn  content-item">About</div>
+                <div class="helpbtn  content-item">Help</div>
+                <div style="background-color: #DFCDBB;" class="search content-item">
+                    <form action="/ayush" method="POST"><input type="text" name="location" placeholder="location"></form>
+                    <img style="width: 15px; background-color: #DFCDBB;"
+                        src="/static/images/magnifying-glass-1093183_1280.png" alt="magnifying-glass">
+                </div>
+            </div>
+        </div>
+
+        <div class="home">
+            <div class="slide">
+                <!-- <img class="backward" style="width: 70px; height: 30px; transform: scaleX(-1);" src="/static/images/gun.png" alt="gun" id="gunb"> -->
+
+                <div class="gun2" onclick="recoilGun2()">
+                    <img src="/static/images/gun2.png" alt="Gun Image" id="gunb">
+                </div>
+
+                <div class="content">
+                    <img class="image" style="width: 400px;" src="/static/images/slides1.png" alt="map">
+                </div>
+
+                <div class="gun" onclick="recoilGun()">
+                    <img src="/static/images/gun.png" alt="Gun Image" id="gunf">
+                </div>
+            </div>
+            <div class="ribbon">
+                <img style="width: 400px; height: 100px" src="/static/images/tagline.png" alt="tagline" class="tagline">
+            </div>
+        </div>
+
+    </main>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+    <script src="../static/index.js"></script>
+</body>
+
+</html>
