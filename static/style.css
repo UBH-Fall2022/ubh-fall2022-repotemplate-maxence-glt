@@ -3,7 +3,11 @@ body{
     background-size: cover;
     background-color: rgb(222, 144, 60);
 }
-
+.search{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
 .logo {
     height: 100px;
     display: flex;
@@ -14,7 +18,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     background-color: #DFCDBB;
     padding: 5px;
 }

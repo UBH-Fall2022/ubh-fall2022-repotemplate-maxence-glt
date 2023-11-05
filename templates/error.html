@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="/static/images/bulb.png" type="image/x-icon">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>The location you entered ( {{ request }} ) was not recognized by our APIs </h1>  
-    </main>
-	<script src="index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="/static/images/bulb.png" type="image/x-icon">
+  <title>My Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body style="background-color: black; margin: 30px;">
+  <main>
+    <div class="errorpage" style="display: flex;justify-content: center;flex-direction: column;">
+      <h1 style="color: white;">The location you entered ( {{ request }} ) was not recognized by our APIs </h1>
+      <div class="content">
+        <img class="errorimg" style="width: 450px; width: 50%; height: 500px; align-content: center;"
+          src="/static/images/cowboy.jpeg" alt="map">
+      </div>
+
+      <audio autoplay preload="auto">
+        <source src="/static/audio/error-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    
+
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+
 </html>
