@@ -18,14 +18,10 @@ def home():
         location = request.form.get("location")
         defaultWeather = weather_specs(location)
 
-        print(defaultWeather, "THIS IS THE LOCATION")
-
         if defaultWeather == False:
             return render_template("error.html", request=location)
 
-        locationIndex=location
-
-        
+        locationIndex=location        
 
         return render_template("index.html", loc=locationIndex, test=defaultWeather)
 
