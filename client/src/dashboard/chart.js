@@ -1,7 +1,14 @@
 import * as React from 'react';
 import { useTheme } from '@mui/material/styles';
 import { LineChart, Line, XAxis, YAxis, Label, ResponsiveContainer } from 'recharts';
-import Title from './Title';
+import Title from './title';
+// fetch("data.json")
+//   .then((response) => response.json())
+//   .then((json) => console.log);
+
+import jsonData from "./data.json";
+console.log(jsonData.hourly.time);
+
 
 // Generate Sales Data
 function createData(time, amount) {
@@ -25,15 +32,15 @@ export default function Chart() {
 
   return (
     <React.Fragment>
-      <Title>Today</Title>
+      <Title>Two Week Forecast</Title>
       <ResponsiveContainer>
         <LineChart
           data={data}
           margin={{
-            top: 16,
-            right: 16,
+            top: 13,
+            right: 10,
             bottom: 0,
-            left: 24,
+            left: 15,
           }}
         >
           <XAxis
@@ -54,11 +61,11 @@ export default function Chart() {
                 ...theme.typography.body1,
               }}
             >
-              Sales ($)
+              Temp, Soil Temp (C)
             </Label>
           </YAxis>
           <Line
-            isAnimationActive={false}
+            isAnimationActive={true}
             type="monotone"
             dataKey="amount"
             stroke={theme.palette.primary.main}
