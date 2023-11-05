@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-// import { Dashboard } from 'client/dashboard/dashboard.js'
+// import dashboard from 'client/dashboard/dashboard.js'
 
 function App() {
 
