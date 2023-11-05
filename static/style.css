@@ -1,5 +1,7 @@
-* {
-    background-color: #C3976A;
+body{
+    background-image: url(/static/images/TheBG.png);
+    background-size: cover;
+    background-color: rgb(222, 144, 60);
 }
 
 .logo {
@@ -34,6 +36,7 @@
 .content-item:hover {
     background-color: #8e765f;
     cursor: pointer;
+    color: white;
 }
 
 .home {
