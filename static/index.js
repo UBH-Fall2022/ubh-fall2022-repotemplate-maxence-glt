@@ -7,7 +7,7 @@ document.querySelector(".aboutbtn").addEventListener('click', function () {
 })
 
 document.querySelector(".homebtn").addEventListener('click', function () {
-    window.location.href = "/ayush";
+    window.location.href = "/";
 })
 
 const prevButton = document.getElementById("gunb");
