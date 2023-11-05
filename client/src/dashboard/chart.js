@@ -16,14 +16,14 @@ function createData(time, amount) {
 }
 
 const data = [
-  createData('00:00', 0),
-  createData('03:00', 300),
-  createData('06:00', 600),
-  createData('09:00', 800),
-  createData('12:00', 1500),
-  createData('15:00', 2000),
-  createData('18:00', 2400),
-  createData('21:00', 2400),
+  createData(12, jsonData.hourly.temperature_2m[12]),
+  createData('03:00', jsonData.hourly.temperature_2m[12 + 24]),
+  createData('06:00', jsonData.hourly.temperature_2m[12 + 48]),
+  createData('09:00', jsonData.hourly.temperature_2m[12 + 72]),
+  createData('12:00', jsonData.hourly.temperature_2m[12 + 96]),
+  createData('15:00', jsonData.hourly.temperature_2m[12 + 120]),
+  createData('18:00', jsonData.hourly.temperature_2m[12 + 144]),
+  createData('21:00', jsonData.hourly.temperature_2m[12 + 168]),
   createData('24:00', undefined),
 ];
 
