@@ -1,16 +1,17 @@
-* {
-    background-color: #C3976A;
+body{
+    background-image: url(/static/images/TheBG.png);
+    background-size: cover;
+    background-color: rgb(222, 144, 60);
 }
 
 .logo {
-
     height: 100px;
     display: flex;
     justify-content: center;
     margin: 20px;
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -35,6 +36,7 @@
 .content-item:hover {
     background-color: #8e765f;
     cursor: pointer;
+    color: white;
 }
 
 .home {
@@ -128,31 +130,3 @@ img {
         transform: rotate(-40deg);
     }
 } */
-
-.contents{
-    width: fit-content;
-    background-color: #DFCDBB;
-}
-.content-item {
-    background-color: #DFCDBB;
-    display: inline-block; 
-    margin: 0 70px; 
-    padding: 10px;
-    font-size: 20px;
-}
-.content-item:hover{
-    background-color: #8e765f;
-    cursor: pointer;
-}
-.help{
-   display: flex;
-   font-family: 'Times New Roman', Times, serif;
-   text-align: center;
-   justify-content: center;
-   margin: 200px;
-}
-.ribbon{
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-}
