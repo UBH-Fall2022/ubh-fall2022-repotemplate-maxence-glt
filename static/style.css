@@ -130,3 +130,17 @@ img {
         transform: rotate(-40deg);
     }
 } */
+
+td, th {
+  
+    border: 2px solid lightgray;
+    text-align: left;
+    padding: 8px;
+  
+  }
+
+#tr1 {
+  
+    background-color: #747474;
+  
+  }

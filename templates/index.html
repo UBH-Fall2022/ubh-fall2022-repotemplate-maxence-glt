@@ -14,8 +14,8 @@
     <main>
         <h1>Grow smart</h1> 
         <h1> {{ loc }} </h1>
-        <table>
-          <tr>
+        <table style="border: 5px solid lightgrey; border-collapse: collapse">
+          <tr id="tr1">
             <th>Time</th>
             <th>Temperature</th>
             <th>Relative humidity</th>
@@ -24,7 +24,6 @@
             <th>Soil temprature</th>
             <th>Soil moisture</th>
           </tr>
-           
           <tr>
             <th>{{ test["hourly"]["time"][12][11:] }}PM EST</th>
             <th>{{ test["hourly"]["temperature_2m"][12]}}ºC</th>
@@ -34,7 +33,6 @@
             <th>{{ test["hourly"]["soil_temperature_6cm"][12]}}ºC</th>
             <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][12]}}m³/m³</th>
           </tr>
-
           <tr>
             <th>{{ test["hourly"]["time"][24+12][11:] }}PM EST</th>
             <th>{{ test["hourly"]["temperature_2m"][24+12]}}ºC</th>
@@ -44,7 +42,6 @@
             <th>{{ test["hourly"]["soil_temperature_6cm"][24+12]}}ºC</th>
             <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][24+12]}}m³/m³</th>
           </tr>
-
           <tr>
             <th>{{ test["hourly"]["time"][48+12][11:] }}PM EST</th>
             <th>{{ test["hourly"]["temperature_2m"][48+12]}}ºC</th>
@@ -54,7 +51,6 @@
             <th>{{ test["hourly"]["soil_temperature_6cm"][48+12]}}ºC</th>
             <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][48+12]}}m³/m³</th>
           </tr>
-
           <tr>
             <th>{{ test["hourly"]["time"][72+12][11:] }}PM EST</th>
             <th>{{ test["hourly"]["temperature_2m"][72+12]}}ºC</th>
@@ -64,7 +60,6 @@
             <th>{{ test["hourly"]["soil_temperature_6cm"][72+12]}}ºC</th>
             <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][72+12]}}m³/m³</th>
           </tr>
-
           <tr>
             <th>{{ test["hourly"]["time"][96+12][11:] }}PM EST</th>
             <th>{{ test["hourly"]["temperature_2m"][96+12]}}ºC</th>
@@ -74,7 +69,6 @@
             <th>{{ test["hourly"]["soil_temperature_6cm"][96+12]}}ºC</th>
             <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][96+12]}}m³/m³</th>
           </tr>
-
           <tr>
             <th>{{ test["hourly"]["time"][120+12][11:] }}PM EST</th>
             <th>{{ test["hourly"]["temperature_2m"][120+12]}}ºC</th>
@@ -84,7 +78,6 @@
             <th>{{ test["hourly"]["soil_temperature_6cm"][120+12]}}ºC</th>
             <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][120+12]}}m³/m³</th>
           </tr>
-
           <tr>
             <th>{{ test["hourly"]["time"][144+12][11:] }}PM EST</th>
             <th>{{ test["hourly"]["temperature_2m"][144+12]}}ºC</th>
@@ -94,7 +87,6 @@
             <th>{{ test["hourly"]["soil_temperature_6cm"][144+12]}}ºC</th>
             <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][144+12]}}m³/m³</th>
           </tr>
-
           <tr>
             <th>{{ test["hourly"]["time"][168+12][11:] }}PM EST</th>
             <th>{{ test["hourly"]["temperature_2m"][168+12]}}ºC</th>
