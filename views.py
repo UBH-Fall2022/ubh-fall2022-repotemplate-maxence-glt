@@ -20,6 +20,7 @@ def home():
 
         if defaultWeather == False:
             return render_template("error.html", request=location)
+            
 
         locationIndex=location        
 

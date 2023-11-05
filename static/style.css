@@ -10,11 +10,10 @@ body{
     justify-content: center;
     margin: 20px;
 }
-
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 70px;
     background-color: #DFCDBB;
     padding: 5px;
