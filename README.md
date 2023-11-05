@@ -31,7 +31,7 @@
   <h3 align="center">Hackie Chan</h3>
 
   <p align="center">
-    An Awesome way to improve your farming!
+    An awesome way to improve your farming!
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
