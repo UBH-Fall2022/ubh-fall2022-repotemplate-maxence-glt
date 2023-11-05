@@ -4,14 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Grow Smart</title>
     <link rel="stylesheet" href="../static/style.css" type="text/css"/>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <main>
-        <h1>Welcome to My Website!!!! </h1>  
+        <h1>Grow smart</h1> 
+        <h1> {{ loc }} </h1>
+        <table>
+          <tr>
+            <th>Time</th>
+            <th>Temperature</th>
+            <th>Relative humidity</th>
+            <th>Precipitation_probability</th>
+            <th>Evapotranspiration</th>
+            <th>Soil temprature</th>
+            <th>Soil moisture</th>
+          </tr>
+           
+          <tr>
+            <th>{{ test["hourly"]["time"][12][11:] }}PM EST</th>
+            <th>{{ test["hourly"]["temperature_2m"][12]}}</th>
+            <th>{{ test["hourly"]["relativehumidity_2m"][12]}}</th>
+            <th>{{ test["hourly"]["precipitation_probability"][12]}}</th>
+            <th>{{ test["hourly"]["evapotranspiration"][12]}}</th>
+            <th>{{ test["hourly"]["soil_temperature_6cm"][12]}}</th>
+            <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][12]}}</th>
+          </tr>
+
+          <tr>
+            <th>{{ test["hourly"]["time"][24+12][11:] }}PM EST</th>
+            <th>{{ test["hourly"]["temperature_2m"][24+12]}}</th>
+            <th>{{ test["hourly"]["relativehumidity_2m"][24+12]}}</th>
+            <th>{{ test["hourly"]["precipitation_probability"][24+12] }}</th>
+            <th>{{ test["hourly"]["evapotranspiration"][24+12]}}</th>
+            <th>{{ test["hourly"]["soil_temperature_6cm"][24+12]}}</th>
+            <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][24+12]}}</th>
+          </tr>
+
+          <tr>
+            <th>{{ test["hourly"]["time"][48+12][11:] }}PM EST</th>
+            <th>{{ test["hourly"]["temperature_2m"][48+12]}}</th>
+            <th>{{ test["hourly"]["relativehumidity_2m"][48+12]}}</th>
+            <th>{{ test["hourly"]["precipitation_probability"][48+12] }}</th>
+            <th>{{ test["hourly"]["evapotranspiration"][48+12]}}</th>
+            <th>{{ test["hourly"]["soil_temperature_6cm"][48+12]}}</th>
+            <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][48+12]}}</th>
+          </tr>
+
+          <tr>
+            <th>{{ test["hourly"]["time"][72+12][11:] }}PM EST</th>
+            <th>{{ test["hourly"]["temperature_2m"][72+12]}}</th>
+            <th>{{ test["hourly"]["relativehumidity_2m"][72+12]}}</th>
+            <th>{{ test["hourly"]["precipitation_probability"][72+12] }}</th>
+            <th>{{ test["hourly"]["evapotranspiration"][72+12]}}</th>
+            <th>{{ test["hourly"]["soil_temperature_6cm"][72+12]}}</th>
+            <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][72+12]}}</th>
+          </tr>
+
+          <tr>
+            <th>{{ test["hourly"]["time"][96+12][11:] }}PM EST</th>
+            <th>{{ test["hourly"]["temperature_2m"][96+12]}}</th>
+            <th>{{ test["hourly"]["relativehumidity_2m"][96+12]}}</th>
+            <th>{{ test["hourly"]["precipitation_probability"][96+12] }}</th>
+            <th>{{ test["hourly"]["evapotranspiration"][96+12]}}</th>
+            <th>{{ test["hourly"]["soil_temperature_6cm"][96+12]}}</th>
+            <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][96+12]}}</th>
+          </tr>
+
+          <tr>
+            <th>{{ test["hourly"]["time"][120+12][11:] }}PM EST</th>
+            <th>{{ test["hourly"]["temperature_2m"][120+12]}}</th>
+            <th>{{ test["hourly"]["relativehumidity_2m"][120+12]}}</th>
+            <th>{{ test["hourly"]["precipitation_probability"][120+12] }}</th>
+            <th>{{ test["hourly"]["evapotranspiration"][120+12]}}</th>
+            <th>{{ test["hourly"]["soil_temperature_6cm"][120+12]}}</th>
+            <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][120+12]}}</th>
+          </tr>
+
+          <tr>
+            <th>{{ test["hourly"]["time"][144+12][11:] }}PM EST</th>
+            <th>{{ test["hourly"]["temperature_2m"][144+12]}}</th>
+            <th>{{ test["hourly"]["relativehumidity_2m"][144+12]}}</th>
+            <th>{{ test["hourly"]["precipitation_probability"][144+12] }}</th>
+            <th>{{ test["hourly"]["evapotranspiration"][144+12]}}</th>
+            <th>{{ test["hourly"]["soil_temperature_6cm"][144+12]}}</th>
+            <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][144+12]}}</th>
+          </tr>
+
+          <tr>
+            <th>{{ test["hourly"]["time"][168+12][11:] }}PM EST</th>
+            <th>{{ test["hourly"]["temperature_2m"][168+12]}}</th>
+            <th>{{ test["hourly"]["relativehumidity_2m"][168+12]}}</th>
+            <th>{{ test["hourly"]["precipitation_probability"][168+12] }}</th>
+            <th>{{ test["hourly"]["evapotranspiration"][168+12]}}</th>
+            <th>{{ test["hourly"]["soil_temperature_6cm"][168+12]}}</th>
+            <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][168+12]}}</th>
+          </tr>
+
+          <p><form action="/" method="POST"> Your location: <input type="text" name="location" placeholder="location"></form></p>
+
+        </table>
     </main>
-	<script src="../static/index.js"></script>
+	<script src="../dashboard/dashboard.js"></script>
   </body>
 </html>
