@@ -13,8 +13,8 @@
 
 <body>
     <main>
-        <h1>Grow smart</h1> 
-        <h1> {{ loc }} </h1>
+        <img src="../static/images/Journal.png" alt="Italian Trulli" style="display: block; margin-left: auto; margin-right: auto;">
+        <h1 style="color: #D9D7C7; text-align: center;"> {{ loc }} </h1>
         <table style="border: 5px solid lightgrey; border-collapse: collapse">
           <tr id="tr1">
             <th style="background-color: #D9D7C7">Time</th>
@@ -98,7 +98,7 @@
             <th>{{ test["hourly"]["soil_moisture_3_to_9cm"][168+12]}}m³/m³</th>
           </tr>
 
-          <p><form action="/ayush" method="POST"> Your location: <input type="text" name="location" placeholder="location"></form></p>
+          <p style="color: #D9D7C7"><form action="/ayush" method="POST"> Your location: <input type="text" name="location" placeholder="location"></form></p>
 
         </table>
     </main>

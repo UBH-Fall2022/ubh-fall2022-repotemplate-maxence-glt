@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request
-from api import weather_specs
+from api import weather_specs, fullLocation
 
 views = Blueprint(__name__, "views")
 
@@ -24,7 +24,7 @@ def home():
 
         locationIndex=location        
 
-        return render_template("index.html", loc=locationIndex, test=defaultWeather)
+        return render_template("index.html", loc=fullLocation(location), test=defaultWeather)
 
 @views.route("/")
 def ayush():
